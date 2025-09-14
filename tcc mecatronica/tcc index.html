@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TCC Mecatrônica – Elevador Vertical Automatizado</title>
+  <style>
+    body {font-family: "Segoe UI", Tahoma, sans-serif; margin:0; padding:0; background:#f5f7fa; color:#333; line-height:1.6;}
+    header {background:linear-gradient(135deg,#004aad,#007bff);color:white;padding:40px 20px;text-align:center;}
+    header h1 {margin:0;font-size:36px;}
+    header p {font-size:18px;margin-top:10px;}
+    nav {background:#003366;padding:10px;position:sticky;top:0;z-index:1000;}
+    nav ul {list-style:none;margin:0;padding:0;display:flex;justify-content:center;flex-wrap:wrap;}
+    nav ul li {margin:0 15px;}
+    nav ul li a {color:white;text-decoration:none;font-weight:bold;transition:color 0.3s;}
+    nav ul li a:hover {color:#ffd700;}
+    section {max-width:1000px;margin:40px auto;padding:20px;background:white;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+    section h2 {text-align:center;margin-bottom:20px;color:#004aad;}
+    img {max-width:85%;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.2);margin:20px auto;display:block;}
+    footer {background:#003366;color:white;text-align:center;padding:20px;margin-top:40px;}
+  </style>
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>TCC Mecatrônica</h1>
+    <p>Elevador Vertical Automatizado com Arduino</p>
+  </header>
+
+  <!-- MENU -->
+  <nav>
+    <ul>
+      <li><a href="#integrantes">Integrantes</a></li>
+      <li><a href="#introducao">Introdução</a></li>
+      <li><a href="#objetivo">Objetivo</a></li>
+      <li><a href="#componentes">Componentes</a></li>
+      <li><a href="#montagem">Montagem</a></li>
+      <li><a href="#testes">Testes</a></li>
+      <li><a href="#conclusao">Conclusão</a></li>
+    </ul>
+  </nav>
+
+  <!-- SEÇÕES -->
+  <section id="integrantes">
+    <h2>Integrantes</h2>
+    <p>Marco Antonio – Ederson Silva – Diego Nascimento – Gabriel Alves Lôredo – Emerson Vilela – Samuel Bezerra</p>
+    <p><em>Colégio Pentágono – Sala 507 – 2º Semestre Noturno – 2025</em></p>
+  </section>
+
+  <section id="introducao">
+    <h2>Introdução</h2>
+    <p>O projeto foi desenvolvido em duas etapas: primeiro a construção mecânica do elevador vertical (2024), depois a automação com Arduino, sensores IR e ponte H (2025), resultando em um protótipo mecatrônico funcional.</p>
+  </section>
+
+  <section id="objetivo">
+    <h2>Objetivo</h2>
+    <ul>
+      <li>Precisão nos movimentos</li>
+      <li>Controle bidirecional</li>
+      <li>Sensores de fim de curso</li>
+      <li>Flexibilidade para futuras expansões</li>
+    </ul>
+  </section>
+
+  <section id="componentes">
+    <h2>Componentes Utilizados</h2>
+
+    <h3>Estrutura Mecânica</h3>
+    <img src="imagens/motor_mecanica.jpg" alt="Motor e estrutura mecânica do elevador">
+    <ul>
+      <li>Motor de vidro elétrico (12V)</li>
+      <li>Perfil de alumínio</li>
+      <li>Plataforma de acrílico</li>
+      <li>Fuso de 8 mm</li>
+      <li>Mancal com rolamento 6 mm</li>
+      <li>Guias lineares de 8 mm</li>
+    </ul>
+
+    <h3>Sistema de Controle e Sensores</h3>
+    <img src="imagens/sensor_ir.jpg" alt="Sensor IR utilizado no elevador">
+    <ul>
+      <li>Arduino Uno</li>
+      <li>Ponte H</li>
+      <li>Sensores IR (fim de curso superior e inferior)</li>
+      <li>Controlador PWM</li>
+    </ul>
+  </section>
+
+  <section id="montagem">
+    <h2>Montagem do Sistema</h2>
+    <p>A estrutura foi montada com perfis de alumínio e acrílico. Foram feitas furações, fixação de guias lineares e acoplamento do motor ao fuso. A equipe trabalhou em conjunto durante a etapa de fabricação.</p>
+    <img src="imagens/trabalho_oficina.jpg" alt="Equipe trabalhando na oficina durante a construção">
+  </section>
+
+  <section id="testes">
+    <h2>Elevador em Teste</h2>
+    <p>Após a montagem e integração com os sensores IR, o protótipo foi testado em diferentes condições de carga e movimento.</p>
+    <img src="imagens/teste_elevador.jpg" alt="Elevador em teste finalizado">
+  </section>
+
+  <section id="conclusao">
+    <h2>Conclusão</h2>
+    <p>O projeto comprovou a viabilidade da automação em sistemas mecânicos. Com Arduino, ponte H e sensores IR, foi possível obter maior controle, precisão e segurança, além de abrir caminho para futuras melhorias.</p>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2025 - Projeto TCC Mecatrônica | Colégio Pentágono</p>
+  </footer>
+</body>
+</html>
